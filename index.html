@@ -203,7 +203,7 @@
   </section>
   <br>
 
-  <!-- Pipeline overview -->
+  <-- Pipeline overview -->
   <section>
     <div class="container">
       <div class="row">
@@ -242,6 +242,36 @@
     </div>
   </section>
   <br>
+
+  <!-- valid view cost volume overview -->
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center">
+            <h3>Depth map comparison</h3>
+            <hr style="margin-top:0px">
+            <div id="mySlider"></div>
+              <script>
+              new SliderBar({
+                el: '#mySlider',            // The container, required
+                beforeImg: 'images//before.png',  // before image, required
+                afterImg: 'images//after.png',    // after image, required
+                width: "90%",               // slide-wrap width, default 100%
+                height: "400px",            // slide-wrap height, default image-height
+                line: false,                 // Dividing line, default true
+                lineColor: "rgba(0,0,0,0.5)" // Dividing line color, default rgba(0,0,0,0.5)
+              });
+              </script>
+            <hr style="margin-top:0px">
+            <p class="text-justify">
+              Depth comparison test 
+            </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <br>
+
 
   <!-- Comparison with state-of-the-art methods -->
   <!-- <section>
@@ -378,7 +408,8 @@
     MathJax = {
       tex: {inlineMath: [['$', '$'], ['\\(', '\\)']]}
     };
-    </script>
-    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+  </script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/before-after-slider@1.0.0/dist/slider.bundle.js"></script>
 </body>
 </html>
