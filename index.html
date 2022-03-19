@@ -263,8 +263,8 @@
               <script>
               new SliderBar({
                 el: '#Slider1',            // The container, required
-                beforeImg: 'images/before.png',  // before image, required
-                afterImg: 'images/after.png',    // after image, required
+                beforeImg: 'depths/159_comp.png',  // before image, required
+                afterImg: 'depths/159_ours.png',    // after image, required
                 width: "100%",               // slide-wrap width, default 100%
                 height: "400px",            // slide-wrap height, default image-height
                 line: true,                 // Dividing line, default true
@@ -272,8 +272,24 @@
               });
               </script>
             <hr style="margin-top:0px">
+
+            <hr style="margin-top:10px">
+            <div id="Slider2"></div>
+            <script>
+            new SliderBar({
+              el: '#Slider2',            // The container, required
+              beforeImg: 'depths/238_comp.png',  // before image, required
+              afterImg: 'depths/238_comp.png',    // after image, required
+              width: "100%",               // slide-wrap width, default 100%
+              height: "400px",            // slide-wrap height, default image-height
+              line: true,                 // Dividing line, default true
+              lineColor: "rgba(0,0,0,0.5)" // Dividing line color, default rgba(0,0,0,0.5)
+            });
+            </script>
+          <hr style="margin-top:0px">
+
             <p class="text-justify">
-              Depth comparison test3
+              Depth comparison test4
             </p>
         </div>
       </div>
