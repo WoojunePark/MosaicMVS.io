@@ -91,6 +91,50 @@
   <br>
 
 
+  <!-- Depth estimation showcases -->
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center">
+            <h3>Depth estimation showcases</h3>
+            <hr style="margin-top:0px">
+            <div id="Slider3"></div>
+              <script>
+              new SliderBar({
+                el: '#Slider3',            // The container, required
+                beforeImg: 'depths/159_rgb.png',  // before image, required
+                afterImg: 'depths/159_ours.png',    // after image, required
+                width: "100%",               // slide-wrap width, default 100%
+                height: "400px",            // slide-wrap height, default image-height
+                line: true,                 // Dividing line, default true
+                lineColor: "rgba(0,0,0,0.5)" // Dividing line color, default rgba(0,0,0,0.5)
+              });
+              </script>
+            <!--hr style="margin-top:0px"-->
+            <hr style="margin-top:10px">
+            <div id="Slider4"></div>
+            <script>
+            new SliderBar({
+              el: '#Slider4',            // The container, required
+              beforeImg: 'depths/238_rgb.png',  // before image, required
+              afterImg: 'depths/238_ours.png',    // after image, required
+              width: "100%",               // slide-wrap width, default 100%
+              height: "400px",            // slide-wrap height, default image-height
+              line: true,                 // Dividing line, default true
+              lineColor: "rgba(0,0,0,0.5)" // Dividing line color, default rgba(0,0,0,0.5)
+            });
+            </script>
+          <hr style="margin-top:10px">
+            <p class="text-justify">
+              From posed RGBs with divergent camera setup (left), our framework estimates accurate depth maps (right).
+            </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <br>
+
+
   <!-- Depth map comparison -->
   <section>
     <div class="container">
@@ -127,7 +171,7 @@
           <hr style="margin-top:10px">
             <p class="text-justify">
               Comparison of estimated depth maps. 
-              Comparing the baseline result(left) and ours(right), depth maps produced by our pipeline clearly show fewer artifacts.
+              Comparing the baseline result (left) and ours (right), depth maps produced by our pipeline clearly show fewer artifacts.
             </p>
         </div>
       </div>
